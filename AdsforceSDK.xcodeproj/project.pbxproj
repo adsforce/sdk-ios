@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA05D3C0207F0D0800D15153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05D3BF207F0D0800D15153 /* AppDelegate.m */; };
+		AA05D3C3207F0D0800D15153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05D3C2207F0D0800D15153 /* ViewController.m */; };
+		AA05D3C8207F0D0800D15153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA05D3C7207F0D0800D15153 /* Assets.xcassets */; };
+		AA05D3CB207F0D0800D15153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA05D3C9207F0D0800D15153 /* LaunchScreen.storyboard */; };
+		AA05D3CE207F0D0800D15153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05D3CD207F0D0800D15153 /* main.m */; };
+		AA07EAD921354A8E0072C20E /* AdsforceBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA07EAD821354A8E0072C20E /* AdsforceBaseModel.m */; };
+		AA1680592133962E000971E3 /* AdsforceFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1680582133962E000971E3 /* AdsforceFileCache.m */; };
+		AA1CC9EC21E88F2600579921 /* AdsforceHttpDnsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CC9DF21E88F2600579921 /* AdsforceHttpDnsManager.m */; };
+		AA1CC9ED21E88F2600579921 /* AdsforceHttpDnsSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CC9E021E88F2600579921 /* AdsforceHttpDnsSession.m */; };
+		AA1CC9EE21E88F2600579921 /* AdsforceHttpSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CC9E421E88F2600579921 /* AdsforceHttpSession.m */; };
+		AA1CC9EF21E88F2600579921 /* AdsforceHttpUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CC9E721E88F2600579921 /* AdsforceHttpUrl.m */; };
+		AA1CC9F021E88F2600579921 /* AdsforceHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CC9EB21E88F2600579921 /* AdsforceHttpManager.m */; };
+		AA21FD0B212D674E004EF7A9 /* AdsforceCustomEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA21FD0A212D674E004EF7A9 /* AdsforceCustomEventManager.m */; };
+		AA21FD0E212D6764004EF7A9 /* AdsforceCustomEventSend.m in Sources */ = {isa = PBXBuildFile; fileRef = AA21FD0D212D6764004EF7A9 /* AdsforceCustomEventSend.m */; };
+		AA434BAE213528EE005AE9CC /* AdsforceIAPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA434BAD213528EE005AE9CC /* AdsforceIAPModel.m */; };
+		AA4D037420DA39CD003352A5 /* AdsforceNetConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D032B20DA39CD003352A5 /* AdsforceNetConnectionManager.m */; };
+		AA4D037520DA39CD003352A5 /* AdsforceNetReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D032C20DA39CD003352A5 /* AdsforceNetReachability.m */; };
+		AA4D037920DA39CD003352A5 /* AdsforceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D033620DA39CD003352A5 /* AdsforceUtil.m */; };
+		AA4D037A20DA39CD003352A5 /* AdsforceMd5Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D033720DA39CD003352A5 /* AdsforceMd5Utils.m */; };
+		AA4D037B20DA39CD003352A5 /* AdsforceStatisticalKeychainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D033D20DA39CD003352A5 /* AdsforceStatisticalKeychainHelper.m */; };
+		AA4D037C20DA39CD003352A5 /* AdsforceStatisticalKeychainDeviceID.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D033F20DA39CD003352A5 /* AdsforceStatisticalKeychainDeviceID.m */; };
+		AA4D037D20DA39CD003352A5 /* AdsforceStatisticalSimulateIDFA.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D034120DA39CD003352A5 /* AdsforceStatisticalSimulateIDFA.m */; };
+		AA4D037F20DA39CD003352A5 /* AdsforceRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D034720DA39CD003352A5 /* AdsforceRSA.m */; };
+		AA4D038020DA39CD003352A5 /* AdsforceAES.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D034A20DA39CD003352A5 /* AdsforceAES.m */; };
+		AA4D038120DA39CD003352A5 /* AdsforceFBEncryptorAES.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D034B20DA39CD003352A5 /* AdsforceFBEncryptorAES.m */; };
+		AA4D038220DA39CD003352A5 /* AdsforceSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D034F20DA39CD003352A5 /* AdsforceSDK.m */; };
+		AA4D038820DA39CD003352A5 /* AdsforceIAPSend.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D035F20DA39CD003352A5 /* AdsforceIAPSend.m */; };
+		AA4D038920DA39CD003352A5 /* AdsforceIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D036220DA39CD003352A5 /* AdsforceIAPManager.m */; };
+		AA4D038C20DA39CD003352A5 /* AdsforceSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D036B20DA39CD003352A5 /* AdsforceSessionManager.m */; };
+		AA4D038D20DA39CD003352A5 /* AdsforceSessionSend.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D036C20DA39CD003352A5 /* AdsforceSessionSend.m */; };
+		AA66F49021F1C70000FF09A5 /* AdsforceEncryptModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA66F48F21F1C70000FF09A5 /* AdsforceEncryptModel.m */; };
+		AA6DFE5920E6185E00A7F0C4 /* AdsforceBase64Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6DFE5820E6185E00A7F0C4 /* AdsforceBase64Utils.m */; };
+		AA7A6F7621363D1E00503996 /* AdsforceCustomEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A6F7521363D1E00503996 /* AdsforceCustomEventModel.m */; };
+		AA99555420DA4A9500F762D2 /* NSMutableDictionary+AdsforceCheckNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = AA99555020DA4A9500F762D2 /* NSMutableDictionary+AdsforceCheckNullValue.m */; };
+		AA99555520DA4A9500F762D2 /* NSMutableString+AdsforceCheckNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = AA99555320DA4A9500F762D2 /* NSMutableString+AdsforceCheckNullValue.m */; };
+		AAB83E6021F6EC8E00891676 /* AdsforceAppleSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB83E5F21F6EC8E00891676 /* AdsforceAppleSearchManager.m */; };
+		AAEA38F9212FB3DB00ACF6AF /* AdsforceTrackingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA38F7212FB3DA00ACF6AF /* AdsforceTrackingManager.m */; };
+		AAEA38FA212FB3DB00ACF6AF /* AdsforceTrackingSend.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA38F8212FB3DA00ACF6AF /* AdsforceTrackingSend.m */; };
+		AAEA390C212FB43100ACF6AF /* AdsforceCpParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA38FD212FB43100ACF6AF /* AdsforceCpParameter.m */; };
+		AAEA390D212FB43100ACF6AF /* AdsforceIAPParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA38FF212FB43100ACF6AF /* AdsforceIAPParameter.m */; };
+		AAEA390E212FB43100ACF6AF /* AdsforceCustomEventParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3903212FB43100ACF6AF /* AdsforceCustomEventParameter.m */; };
+		AAEA390F212FB43100ACF6AF /* AdsforceTrackingParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3905212FB43100ACF6AF /* AdsforceTrackingParameter.m */; };
+		AAEA3910212FB43100ACF6AF /* AdsforceBaseParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3907212FB43100ACF6AF /* AdsforceBaseParameter.m */; };
+		AAEA3911212FB43100ACF6AF /* AdsforceSessionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA390B212FB43100ACF6AF /* AdsforceSessionParameter.m */; };
+		AAEA3917212FB5B300ACF6AF /* AdsforceDeeplinkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3914212FB5B300ACF6AF /* AdsforceDeeplinkManager.m */; };
+		AAEA3918212FB5B300ACF6AF /* AdsforceDeeplinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3915212FB5B300ACF6AF /* AdsforceDeeplinkModel.m */; };
+		AAEA3920212FB66E00ACF6AF /* AdsforceSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEA391F212FB66D00ACF6AF /* AdsforceSessionModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA05D3BB207F0D0700D15153 /* AdsforceSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdsforceSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA05D3BE207F0D0700D15153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA05D3BF207F0D0800D15153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA05D3C1207F0D0800D15153 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA05D3C2207F0D0800D15153 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA05D3C7207F0D0800D15153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA05D3CA207F0D0800D15153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA05D3CC207F0D0800D15153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA05D3CD207F0D0800D15153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA07EAD721354A8E0072C20E /* AdsforceBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceBaseModel.h; sourceTree = "<group>"; };
+		AA07EAD821354A8E0072C20E /* AdsforceBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceBaseModel.m; sourceTree = "<group>"; };
+		AA1680572133962E000971E3 /* AdsforceFileCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceFileCache.h; sourceTree = "<group>"; };
+		AA1680582133962E000971E3 /* AdsforceFileCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceFileCache.m; sourceTree = "<group>"; };
+		AA1CC9DF21E88F2600579921 /* AdsforceHttpDnsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceHttpDnsManager.m; sourceTree = "<group>"; };
+		AA1CC9E021E88F2600579921 /* AdsforceHttpDnsSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceHttpDnsSession.m; sourceTree = "<group>"; };
+		AA1CC9E121E88F2600579921 /* AdsforceHttpDnsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceHttpDnsManager.h; sourceTree = "<group>"; };
+		AA1CC9E221E88F2600579921 /* AdsforceHttpDnsSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceHttpDnsSession.h; sourceTree = "<group>"; };
+		AA1CC9E421E88F2600579921 /* AdsforceHttpSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceHttpSession.m; sourceTree = "<group>"; };
+		AA1CC9E521E88F2600579921 /* AdsforceHttpSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceHttpSession.h; sourceTree = "<group>"; };
+		AA1CC9E721E88F2600579921 /* AdsforceHttpUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceHttpUrl.m; sourceTree = "<group>"; };
+		AA1CC9E821E88F2600579921 /* AdsforceHttpUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceHttpUrl.h; sourceTree = "<group>"; };
+		AA1CC9EA21E88F2600579921 /* AdsforceHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceHttpManager.h; sourceTree = "<group>"; };
+		AA1CC9EB21E88F2600579921 /* AdsforceHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceHttpManager.m; sourceTree = "<group>"; };
+		AA21FD09212D674E004EF7A9 /* AdsforceCustomEventManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceCustomEventManager.h; sourceTree = "<group>"; };
+		AA21FD0A212D674E004EF7A9 /* AdsforceCustomEventManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceCustomEventManager.m; sourceTree = "<group>"; };
+		AA21FD0C212D6764004EF7A9 /* AdsforceCustomEventSend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceCustomEventSend.h; sourceTree = "<group>"; };
+		AA21FD0D212D6764004EF7A9 /* AdsforceCustomEventSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceCustomEventSend.m; sourceTree = "<group>"; };
+		AA434BAC213528EE005AE9CC /* AdsforceIAPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceIAPModel.h; sourceTree = "<group>"; };
+		AA434BAD213528EE005AE9CC /* AdsforceIAPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceIAPModel.m; sourceTree = "<group>"; };
+		AA4D032920DA39CD003352A5 /* AdsforceNetConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceNetConnectionManager.h; sourceTree = "<group>"; };
+		AA4D032A20DA39CD003352A5 /* AdsforceNetReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceNetReachability.h; sourceTree = "<group>"; };
+		AA4D032B20DA39CD003352A5 /* AdsforceNetConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceNetConnectionManager.m; sourceTree = "<group>"; };
+		AA4D032C20DA39CD003352A5 /* AdsforceNetReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceNetReachability.m; sourceTree = "<group>"; };
+		AA4D033520DA39CD003352A5 /* AdsforceMd5Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceMd5Utils.h; sourceTree = "<group>"; };
+		AA4D033620DA39CD003352A5 /* AdsforceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceUtil.m; sourceTree = "<group>"; };
+		AA4D033720DA39CD003352A5 /* AdsforceMd5Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceMd5Utils.m; sourceTree = "<group>"; };
+		AA4D033820DA39CD003352A5 /* AdsforceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceUtil.h; sourceTree = "<group>"; };
+		AA4D033C20DA39CD003352A5 /* AdsforceStatisticalKeychainDeviceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceStatisticalKeychainDeviceID.h; sourceTree = "<group>"; };
+		AA4D033D20DA39CD003352A5 /* AdsforceStatisticalKeychainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceStatisticalKeychainHelper.m; sourceTree = "<group>"; };
+		AA4D033E20DA39CD003352A5 /* AdsforceStatisticalKeychainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceStatisticalKeychainHelper.h; sourceTree = "<group>"; };
+		AA4D033F20DA39CD003352A5 /* AdsforceStatisticalKeychainDeviceID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceStatisticalKeychainDeviceID.m; sourceTree = "<group>"; };
+		AA4D034120DA39CD003352A5 /* AdsforceStatisticalSimulateIDFA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceStatisticalSimulateIDFA.m; sourceTree = "<group>"; };
+		AA4D034220DA39CD003352A5 /* AdsforceStatisticalSimulateIDFA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceStatisticalSimulateIDFA.h; sourceTree = "<group>"; };
+		AA4D034720DA39CD003352A5 /* AdsforceRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceRSA.m; sourceTree = "<group>"; };
+		AA4D034820DA39CD003352A5 /* AdsforceRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceRSA.h; sourceTree = "<group>"; };
+		AA4D034A20DA39CD003352A5 /* AdsforceAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceAES.m; sourceTree = "<group>"; };
+		AA4D034B20DA39CD003352A5 /* AdsforceFBEncryptorAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceFBEncryptorAES.m; sourceTree = "<group>"; };
+		AA4D034C20DA39CD003352A5 /* AdsforceAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceAES.h; sourceTree = "<group>"; };
+		AA4D034D20DA39CD003352A5 /* AdsforceFBEncryptorAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceFBEncryptorAES.h; sourceTree = "<group>"; };
+		AA4D034F20DA39CD003352A5 /* AdsforceSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceSDK.m; sourceTree = "<group>"; };
+		AA4D035020DA39CD003352A5 /* AdsforceSDKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceSDKVersion.h; sourceTree = "<group>"; };
+		AA4D035120DA39CD003352A5 /* AdsforceSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceSDK.h; sourceTree = "<group>"; };
+		AA4D035F20DA39CD003352A5 /* AdsforceIAPSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceIAPSend.m; sourceTree = "<group>"; };
+		AA4D036020DA39CD003352A5 /* AdsforceIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceIAPManager.h; sourceTree = "<group>"; };
+		AA4D036120DA39CD003352A5 /* AdsforceIAPSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceIAPSend.h; sourceTree = "<group>"; };
+		AA4D036220DA39CD003352A5 /* AdsforceIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceIAPManager.m; sourceTree = "<group>"; };
+		AA4D036820DA39CD003352A5 /* AdsforceSessionSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceSessionSend.h; sourceTree = "<group>"; };
+		AA4D036920DA39CD003352A5 /* AdsforceSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceSessionManager.h; sourceTree = "<group>"; };
+		AA4D036B20DA39CD003352A5 /* AdsforceSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceSessionManager.m; sourceTree = "<group>"; };
+		AA4D036C20DA39CD003352A5 /* AdsforceSessionSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceSessionSend.m; sourceTree = "<group>"; };
+		AA66F48E21F1C70000FF09A5 /* AdsforceEncryptModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceEncryptModel.h; sourceTree = "<group>"; };
+		AA66F48F21F1C70000FF09A5 /* AdsforceEncryptModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceEncryptModel.m; sourceTree = "<group>"; };
+		AA6DFE5720E6185E00A7F0C4 /* AdsforceBase64Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceBase64Utils.h; sourceTree = "<group>"; };
+		AA6DFE5820E6185E00A7F0C4 /* AdsforceBase64Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceBase64Utils.m; sourceTree = "<group>"; };
+		AA7A6F7421363D1E00503996 /* AdsforceCustomEventModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceCustomEventModel.h; sourceTree = "<group>"; };
+		AA7A6F7521363D1E00503996 /* AdsforceCustomEventModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceCustomEventModel.m; sourceTree = "<group>"; };
+		AA99555020DA4A9500F762D2 /* NSMutableDictionary+AdsforceCheckNullValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+AdsforceCheckNullValue.m"; sourceTree = "<group>"; };
+		AA99555120DA4A9500F762D2 /* NSMutableString+AdsforceCheckNullValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+AdsforceCheckNullValue.h"; sourceTree = "<group>"; };
+		AA99555220DA4A9500F762D2 /* NSMutableDictionary+AdsforceCheckNullValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+AdsforceCheckNullValue.h"; sourceTree = "<group>"; };
+		AA99555320DA4A9500F762D2 /* NSMutableString+AdsforceCheckNullValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+AdsforceCheckNullValue.m"; sourceTree = "<group>"; };
+		AAB83E5E21F6EC8E00891676 /* AdsforceAppleSearchManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsforceAppleSearchManager.h; sourceTree = "<group>"; };
+		AAB83E5F21F6EC8E00891676 /* AdsforceAppleSearchManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsforceAppleSearchManager.m; sourceTree = "<group>"; };
+		AAEA38F5212FB3DA00ACF6AF /* AdsforceTrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceTrackingManager.h; sourceTree = "<group>"; };
+		AAEA38F6212FB3DA00ACF6AF /* AdsforceTrackingSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceTrackingSend.h; sourceTree = "<group>"; };
+		AAEA38F7212FB3DA00ACF6AF /* AdsforceTrackingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceTrackingManager.m; sourceTree = "<group>"; };
+		AAEA38F8212FB3DA00ACF6AF /* AdsforceTrackingSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceTrackingSend.m; sourceTree = "<group>"; };
+		AAEA38FC212FB43100ACF6AF /* AdsforceBaseParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceBaseParameter.h; sourceTree = "<group>"; };
+		AAEA38FD212FB43100ACF6AF /* AdsforceCpParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceCpParameter.m; sourceTree = "<group>"; };
+		AAEA38FF212FB43100ACF6AF /* AdsforceIAPParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceIAPParameter.m; sourceTree = "<group>"; };
+		AAEA3900212FB43100ACF6AF /* AdsforceIAPParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceIAPParameter.h; sourceTree = "<group>"; };
+		AAEA3902212FB43100ACF6AF /* AdsforceCustomEventParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceCustomEventParameter.h; sourceTree = "<group>"; };
+		AAEA3903212FB43100ACF6AF /* AdsforceCustomEventParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceCustomEventParameter.m; sourceTree = "<group>"; };
+		AAEA3905212FB43100ACF6AF /* AdsforceTrackingParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceTrackingParameter.m; sourceTree = "<group>"; };
+		AAEA3906212FB43100ACF6AF /* AdsforceTrackingParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceTrackingParameter.h; sourceTree = "<group>"; };
+		AAEA3907212FB43100ACF6AF /* AdsforceBaseParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceBaseParameter.m; sourceTree = "<group>"; };
+		AAEA3908212FB43100ACF6AF /* AdsforceCpParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceCpParameter.h; sourceTree = "<group>"; };
+		AAEA390A212FB43100ACF6AF /* AdsforceSessionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceSessionParameter.h; sourceTree = "<group>"; };
+		AAEA390B212FB43100ACF6AF /* AdsforceSessionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceSessionParameter.m; sourceTree = "<group>"; };
+		AAEA3913212FB5B300ACF6AF /* AdsforceDeeplinkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceDeeplinkModel.h; sourceTree = "<group>"; };
+		AAEA3914212FB5B300ACF6AF /* AdsforceDeeplinkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceDeeplinkManager.m; sourceTree = "<group>"; };
+		AAEA3915212FB5B300ACF6AF /* AdsforceDeeplinkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceDeeplinkModel.m; sourceTree = "<group>"; };
+		AAEA3916212FB5B300ACF6AF /* AdsforceDeeplinkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceDeeplinkManager.h; sourceTree = "<group>"; };
+		AAEA391E212FB66D00ACF6AF /* AdsforceSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsforceSessionModel.h; sourceTree = "<group>"; };
+		AAEA391F212FB66D00ACF6AF /* AdsforceSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsforceSessionModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA05D3B8207F0D0700D15153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA05D3B2207F0D0700D15153 = {
+			isa = PBXGroup;
+			children = (
+				AA4D032620DA39CD003352A5 /* code */,
+				AA05D3BD207F0D0700D15153 /* AdsforceSDK */,
+				AA05D3BC207F0D0700D15153 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA05D3BC207F0D0700D15153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA05D3BB207F0D0700D15153 /* AdsforceSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA05D3BD207F0D0700D15153 /* AdsforceSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AA05D3BE207F0D0700D15153 /* AppDelegate.h */,
+				AA05D3BF207F0D0800D15153 /* AppDelegate.m */,
+				AA05D3C1207F0D0800D15153 /* ViewController.h */,
+				AA05D3C2207F0D0800D15153 /* ViewController.m */,
+				AA05D3C7207F0D0800D15153 /* Assets.xcassets */,
+				AA05D3C9207F0D0800D15153 /* LaunchScreen.storyboard */,
+				AA05D3CC207F0D0800D15153 /* Info.plist */,
+				AA05D3CD207F0D0800D15153 /* main.m */,
+			);
+			path = AdsforceSDK;
+			sourceTree = "<group>";
+		};
+		AA1CC9DE21E88F2500579921 /* HttpDNS */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CC9E121E88F2600579921 /* AdsforceHttpDnsManager.h */,
+				AA1CC9DF21E88F2600579921 /* AdsforceHttpDnsManager.m */,
+				AA1CC9E221E88F2600579921 /* AdsforceHttpDnsSession.h */,
+				AA1CC9E021E88F2600579921 /* AdsforceHttpDnsSession.m */,
+			);
+			path = HttpDNS;
+			sourceTree = "<group>";
+		};
+		AA1CC9E321E88F2600579921 /* HttpSession */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CC9E521E88F2600579921 /* AdsforceHttpSession.h */,
+				AA1CC9E421E88F2600579921 /* AdsforceHttpSession.m */,
+			);
+			path = HttpSession;
+			sourceTree = "<group>";
+		};
+		AA1CC9E621E88F2600579921 /* HttpUrl */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CC9E821E88F2600579921 /* AdsforceHttpUrl.h */,
+				AA1CC9E721E88F2600579921 /* AdsforceHttpUrl.m */,
+			);
+			path = HttpUrl;
+			sourceTree = "<group>";
+		};
+		AA1CC9E921E88F2600579921 /* HttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CC9EA21E88F2600579921 /* AdsforceHttpManager.h */,
+				AA1CC9EB21E88F2600579921 /* AdsforceHttpManager.m */,
+			);
+			path = HttpManager;
+			sourceTree = "<group>";
+		};
+		AA21FD05212D6621004EF7A9 /* CustomEvent */ = {
+			isa = PBXGroup;
+			children = (
+				AA21FD09212D674E004EF7A9 /* AdsforceCustomEventManager.h */,
+				AA21FD0A212D674E004EF7A9 /* AdsforceCustomEventManager.m */,
+				AA21FD0C212D6764004EF7A9 /* AdsforceCustomEventSend.h */,
+				AA21FD0D212D6764004EF7A9 /* AdsforceCustomEventSend.m */,
+			);
+			path = CustomEvent;
+			sourceTree = "<group>";
+		};
+		AA4D032620DA39CD003352A5 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D033920DA39CD003352A5 /* Lib */,
+				AA4D033420DA39CD003352A5 /* Utils */,
+				AA4D032720DA39CD003352A5 /* Network */,
+				AA4D034E20DA39CD003352A5 /* API */,
+				AAEA38FB212FB43100ACF6AF /* Parameter */,
+				AAEA3919212FB62300ACF6AF /* Model */,
+				AAEA3921212FB89E00ACF6AF /* FileCache */,
+				AA4D035D20DA39CD003352A5 /* Event */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		AA4D032720DA39CD003352A5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D032820DA39CD003352A5 /* NetMonitor */,
+				AA4D032D20DA39CD003352A5 /* HTTP */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AA4D032820DA39CD003352A5 /* NetMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D032920DA39CD003352A5 /* AdsforceNetConnectionManager.h */,
+				AA4D032B20DA39CD003352A5 /* AdsforceNetConnectionManager.m */,
+				AA4D032A20DA39CD003352A5 /* AdsforceNetReachability.h */,
+				AA4D032C20DA39CD003352A5 /* AdsforceNetReachability.m */,
+			);
+			path = NetMonitor;
+			sourceTree = "<group>";
+		};
+		AA4D032D20DA39CD003352A5 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CC9E921E88F2600579921 /* HttpManager */,
+				AA1CC9E321E88F2600579921 /* HttpSession */,
+				AA1CC9E621E88F2600579921 /* HttpUrl */,
+				AA1CC9DE21E88F2500579921 /* HttpDNS */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		AA4D033420DA39CD003352A5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AA6DFE5720E6185E00A7F0C4 /* AdsforceBase64Utils.h */,
+				AA6DFE5820E6185E00A7F0C4 /* AdsforceBase64Utils.m */,
+				AA4D033520DA39CD003352A5 /* AdsforceMd5Utils.h */,
+				AA4D033720DA39CD003352A5 /* AdsforceMd5Utils.m */,
+				AA4D033820DA39CD003352A5 /* AdsforceUtil.h */,
+				AA4D033620DA39CD003352A5 /* AdsforceUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AA4D033920DA39CD003352A5 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				AA99554F20DA4A9500F762D2 /* Category */,
+				AA4D033A20DA39CD003352A5 /* AnalysisDeviceID */,
+				AA4D034620DA39CD003352A5 /* RSA */,
+				AA4D034920DA39CD003352A5 /* AES128ECB */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		AA4D033A20DA39CD003352A5 /* AnalysisDeviceID */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D033B20DA39CD003352A5 /* KeychainDeviceID */,
+				AA4D034020DA39CD003352A5 /* SimulateIDFA */,
+			);
+			path = AnalysisDeviceID;
+			sourceTree = "<group>";
+		};
+		AA4D033B20DA39CD003352A5 /* KeychainDeviceID */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D033C20DA39CD003352A5 /* AdsforceStatisticalKeychainDeviceID.h */,
+				AA4D033F20DA39CD003352A5 /* AdsforceStatisticalKeychainDeviceID.m */,
+				AA4D033E20DA39CD003352A5 /* AdsforceStatisticalKeychainHelper.h */,
+				AA4D033D20DA39CD003352A5 /* AdsforceStatisticalKeychainHelper.m */,
+			);
+			path = KeychainDeviceID;
+			sourceTree = "<group>";
+		};
+		AA4D034020DA39CD003352A5 /* SimulateIDFA */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D034220DA39CD003352A5 /* AdsforceStatisticalSimulateIDFA.h */,
+				AA4D034120DA39CD003352A5 /* AdsforceStatisticalSimulateIDFA.m */,
+			);
+			path = SimulateIDFA;
+			sourceTree = "<group>";
+		};
+		AA4D034620DA39CD003352A5 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D034820DA39CD003352A5 /* AdsforceRSA.h */,
+				AA4D034720DA39CD003352A5 /* AdsforceRSA.m */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		AA4D034920DA39CD003352A5 /* AES128ECB */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D034C20DA39CD003352A5 /* AdsforceAES.h */,
+				AA4D034A20DA39CD003352A5 /* AdsforceAES.m */,
+				AA4D034D20DA39CD003352A5 /* AdsforceFBEncryptorAES.h */,
+				AA4D034B20DA39CD003352A5 /* AdsforceFBEncryptorAES.m */,
+			);
+			path = AES128ECB;
+			sourceTree = "<group>";
+		};
+		AA4D034E20DA39CD003352A5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D035120DA39CD003352A5 /* AdsforceSDK.h */,
+				AA4D034F20DA39CD003352A5 /* AdsforceSDK.m */,
+				AA4D035020DA39CD003352A5 /* AdsforceSDKVersion.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AA4D035D20DA39CD003352A5 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				AA21FD05212D6621004EF7A9 /* CustomEvent */,
+				AAEA3912212FB5B300ACF6AF /* Deeplink */,
+				AA4D035E20DA39CD003352A5 /* IAP */,
+				AA4D036620DA39CD003352A5 /* Session */,
+				AAEA38F4212FB3DA00ACF6AF /* Tracking */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		AA4D035E20DA39CD003352A5 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D036020DA39CD003352A5 /* AdsforceIAPManager.h */,
+				AA4D036220DA39CD003352A5 /* AdsforceIAPManager.m */,
+				AA4D036120DA39CD003352A5 /* AdsforceIAPSend.h */,
+				AA4D035F20DA39CD003352A5 /* AdsforceIAPSend.m */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		AA4D036620DA39CD003352A5 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D036920DA39CD003352A5 /* AdsforceSessionManager.h */,
+				AA4D036B20DA39CD003352A5 /* AdsforceSessionManager.m */,
+				AA4D036820DA39CD003352A5 /* AdsforceSessionSend.h */,
+				AA4D036C20DA39CD003352A5 /* AdsforceSessionSend.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		AA99554F20DA4A9500F762D2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AA99555220DA4A9500F762D2 /* NSMutableDictionary+AdsforceCheckNullValue.h */,
+				AA99555020DA4A9500F762D2 /* NSMutableDictionary+AdsforceCheckNullValue.m */,
+				AA99555120DA4A9500F762D2 /* NSMutableString+AdsforceCheckNullValue.h */,
+				AA99555320DA4A9500F762D2 /* NSMutableString+AdsforceCheckNullValue.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AAEA38F4212FB3DA00ACF6AF /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA38F5212FB3DA00ACF6AF /* AdsforceTrackingManager.h */,
+				AAEA38F7212FB3DA00ACF6AF /* AdsforceTrackingManager.m */,
+				AAEA38F6212FB3DA00ACF6AF /* AdsforceTrackingSend.h */,
+				AAEA38F8212FB3DA00ACF6AF /* AdsforceTrackingSend.m */,
+				AAB83E5E21F6EC8E00891676 /* AdsforceAppleSearchManager.h */,
+				AAB83E5F21F6EC8E00891676 /* AdsforceAppleSearchManager.m */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		AAEA38FB212FB43100ACF6AF /* Parameter */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA38FC212FB43100ACF6AF /* AdsforceBaseParameter.h */,
+				AAEA3907212FB43100ACF6AF /* AdsforceBaseParameter.m */,
+				AAEA3908212FB43100ACF6AF /* AdsforceCpParameter.h */,
+				AAEA38FD212FB43100ACF6AF /* AdsforceCpParameter.m */,
+				AAEA3901212FB43100ACF6AF /* CustomEvent */,
+				AAEA38FE212FB43100ACF6AF /* IAP */,
+				AAEA3909212FB43100ACF6AF /* Session */,
+				AAEA3904212FB43100ACF6AF /* Tracking */,
+			);
+			path = Parameter;
+			sourceTree = "<group>";
+		};
+		AAEA38FE212FB43100ACF6AF /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA3900212FB43100ACF6AF /* AdsforceIAPParameter.h */,
+				AAEA38FF212FB43100ACF6AF /* AdsforceIAPParameter.m */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		AAEA3901212FB43100ACF6AF /* CustomEvent */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA3902212FB43100ACF6AF /* AdsforceCustomEventParameter.h */,
+				AAEA3903212FB43100ACF6AF /* AdsforceCustomEventParameter.m */,
+			);
+			path = CustomEvent;
+			sourceTree = "<group>";
+		};
+		AAEA3904212FB43100ACF6AF /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA3906212FB43100ACF6AF /* AdsforceTrackingParameter.h */,
+				AAEA3905212FB43100ACF6AF /* AdsforceTrackingParameter.m */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		AAEA3909212FB43100ACF6AF /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA390A212FB43100ACF6AF /* AdsforceSessionParameter.h */,
+				AAEA390B212FB43100ACF6AF /* AdsforceSessionParameter.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		AAEA3912212FB5B300ACF6AF /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA3916212FB5B300ACF6AF /* AdsforceDeeplinkManager.h */,
+				AAEA3914212FB5B300ACF6AF /* AdsforceDeeplinkManager.m */,
+				AAEA3913212FB5B300ACF6AF /* AdsforceDeeplinkModel.h */,
+				AAEA3915212FB5B300ACF6AF /* AdsforceDeeplinkModel.m */,
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		AAEA3919212FB62300ACF6AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA07EAD721354A8E0072C20E /* AdsforceBaseModel.h */,
+				AA07EAD821354A8E0072C20E /* AdsforceBaseModel.m */,
+				AA66F48E21F1C70000FF09A5 /* AdsforceEncryptModel.h */,
+				AA66F48F21F1C70000FF09A5 /* AdsforceEncryptModel.m */,
+				AAEA391B212FB62300ACF6AF /* CustomEvent */,
+				AAEA391A212FB62300ACF6AF /* IAP */,
+				AAEA391D212FB62300ACF6AF /* Session */,
+				AAEA391C212FB62300ACF6AF /* Tracking */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AAEA391A212FB62300ACF6AF /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				AA434BAC213528EE005AE9CC /* AdsforceIAPModel.h */,
+				AA434BAD213528EE005AE9CC /* AdsforceIAPModel.m */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		AAEA391B212FB62300ACF6AF /* CustomEvent */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A6F7421363D1E00503996 /* AdsforceCustomEventModel.h */,
+				AA7A6F7521363D1E00503996 /* AdsforceCustomEventModel.m */,
+			);
+			path = CustomEvent;
+			sourceTree = "<group>";
+		};
+		AAEA391C212FB62300ACF6AF /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		AAEA391D212FB62300ACF6AF /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA391E212FB66D00ACF6AF /* AdsforceSessionModel.h */,
+				AAEA391F212FB66D00ACF6AF /* AdsforceSessionModel.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		AAEA3921212FB89E00ACF6AF /* FileCache */ = {
+			isa = PBXGroup;
+			children = (
+				AA1680572133962E000971E3 /* AdsforceFileCache.h */,
+				AA1680582133962E000971E3 /* AdsforceFileCache.m */,
+			);
+			path = FileCache;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA05D3BA207F0D0700D15153 /* AdsforceSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA05D3D1207F0D0800D15153 /* Build configuration list for PBXNativeTarget "AdsforceSDK" */;
+			buildPhases = (
+				AA05D3B7207F0D0700D15153 /* Sources */,
+				AA05D3B8207F0D0700D15153 /* Frameworks */,
+				AA05D3B9207F0D0700D15153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdsforceSDK;
+			productName = ADCSDK;
+			productReference = AA05D3BB207F0D0700D15153 /* AdsforceSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA05D3B3207F0D0700D15153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = liuguojun;
+				TargetAttributes = {
+					AA05D3BA207F0D0700D15153 = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = AA05D3B6207F0D0700D15153 /* Build configuration list for PBXProject "AdsforceSDK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA05D3B2207F0D0700D15153;
+			productRefGroup = AA05D3BC207F0D0700D15153 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA05D3BA207F0D0700D15153 /* AdsforceSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA05D3B9207F0D0700D15153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA05D3CB207F0D0800D15153 /* LaunchScreen.storyboard in Resources */,
+				AA05D3C8207F0D0800D15153 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA05D3B7207F0D0700D15153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4D037B20DA39CD003352A5 /* AdsforceStatisticalKeychainHelper.m in Sources */,
+				AA1CC9ED21E88F2600579921 /* AdsforceHttpDnsSession.m in Sources */,
+				AA1CC9F021E88F2600579921 /* AdsforceHttpManager.m in Sources */,
+				AAEA3910212FB43100ACF6AF /* AdsforceBaseParameter.m in Sources */,
+				AA1680592133962E000971E3 /* AdsforceFileCache.m in Sources */,
+				AA05D3C3207F0D0800D15153 /* ViewController.m in Sources */,
+				AA4D038820DA39CD003352A5 /* AdsforceIAPSend.m in Sources */,
+				AAEA3920212FB66E00ACF6AF /* AdsforceSessionModel.m in Sources */,
+				AAB83E6021F6EC8E00891676 /* AdsforceAppleSearchManager.m in Sources */,
+				AA4D037C20DA39CD003352A5 /* AdsforceStatisticalKeychainDeviceID.m in Sources */,
+				AA1CC9EF21E88F2600579921 /* AdsforceHttpUrl.m in Sources */,
+				AA21FD0B212D674E004EF7A9 /* AdsforceCustomEventManager.m in Sources */,
+				AAEA3917212FB5B300ACF6AF /* AdsforceDeeplinkManager.m in Sources */,
+				AAEA390E212FB43100ACF6AF /* AdsforceCustomEventParameter.m in Sources */,
+				AA1CC9EC21E88F2600579921 /* AdsforceHttpDnsManager.m in Sources */,
+				AA05D3CE207F0D0800D15153 /* main.m in Sources */,
+				AA4D038020DA39CD003352A5 /* AdsforceAES.m in Sources */,
+				AA99555420DA4A9500F762D2 /* NSMutableDictionary+AdsforceCheckNullValue.m in Sources */,
+				AAEA3918212FB5B300ACF6AF /* AdsforceDeeplinkModel.m in Sources */,
+				AAEA3911212FB43100ACF6AF /* AdsforceSessionParameter.m in Sources */,
+				AA4D037D20DA39CD003352A5 /* AdsforceStatisticalSimulateIDFA.m in Sources */,
+				AAEA390C212FB43100ACF6AF /* AdsforceCpParameter.m in Sources */,
+				AA4D038920DA39CD003352A5 /* AdsforceIAPManager.m in Sources */,
+				AA4D037A20DA39CD003352A5 /* AdsforceMd5Utils.m in Sources */,
+				AA7A6F7621363D1E00503996 /* AdsforceCustomEventModel.m in Sources */,
+				AA4D037520DA39CD003352A5 /* AdsforceNetReachability.m in Sources */,
+				AAEA38F9212FB3DB00ACF6AF /* AdsforceTrackingManager.m in Sources */,
+				AA07EAD921354A8E0072C20E /* AdsforceBaseModel.m in Sources */,
+				AA99555520DA4A9500F762D2 /* NSMutableString+AdsforceCheckNullValue.m in Sources */,
+				AAEA38FA212FB3DB00ACF6AF /* AdsforceTrackingSend.m in Sources */,
+				AA4D037420DA39CD003352A5 /* AdsforceNetConnectionManager.m in Sources */,
+				AA6DFE5920E6185E00A7F0C4 /* AdsforceBase64Utils.m in Sources */,
+				AA4D037920DA39CD003352A5 /* AdsforceUtil.m in Sources */,
+				AA1CC9EE21E88F2600579921 /* AdsforceHttpSession.m in Sources */,
+				AA4D038220DA39CD003352A5 /* AdsforceSDK.m in Sources */,
+				AA4D038C20DA39CD003352A5 /* AdsforceSessionManager.m in Sources */,
+				AAEA390D212FB43100ACF6AF /* AdsforceIAPParameter.m in Sources */,
+				AA4D038120DA39CD003352A5 /* AdsforceFBEncryptorAES.m in Sources */,
+				AA21FD0E212D6764004EF7A9 /* AdsforceCustomEventSend.m in Sources */,
+				AA05D3C0207F0D0800D15153 /* AppDelegate.m in Sources */,
+				AA4D038D20DA39CD003352A5 /* AdsforceSessionSend.m in Sources */,
+				AA66F49021F1C70000FF09A5 /* AdsforceEncryptModel.m in Sources */,
+				AA434BAE213528EE005AE9CC /* AdsforceIAPModel.m in Sources */,
+				AA4D037F20DA39CD003352A5 /* AdsforceRSA.m in Sources */,
+				AAEA390F212FB43100ACF6AF /* AdsforceTrackingParameter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA05D3C9207F0D0800D15153 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA05D3CA207F0D0800D15153 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA05D3CF207F0D0800D15153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA05D3D0207F0D0800D15153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA05D3D2207F0D0800D15153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HCJK3Y243A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"UPLTVAdsforceSDKDEBUG=1",
+				);
+				INFOPLIST_FILE = AdsforceSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upltv.xhance.demo.qa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b62cb9b9-bd9f-47d6-92b9-3920029a19f9";
+				PROVISIONING_PROFILE_SPECIFIER = Xhance_QATest_Development_Profile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA05D3D3207F0D0800D15153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HCJK3Y243A;
+				INFOPLIST_FILE = AdsforceSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upltv.xhance.demo.qa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b62cb9b9-bd9f-47d6-92b9-3920029a19f9";
+				PROVISIONING_PROFILE_SPECIFIER = Xhance_QATest_Development_Profile;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA05D3B6207F0D0700D15153 /* Build configuration list for PBXProject "AdsforceSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA05D3CF207F0D0800D15153 /* Debug */,
+				AA05D3D0207F0D0800D15153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA05D3D1207F0D0800D15153 /* Build configuration list for PBXNativeTarget "AdsforceSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA05D3D2207F0D0800D15153 /* Debug */,
+				AA05D3D3207F0D0800D15153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA05D3B3207F0D0700D15153 /* Project object */;
+}

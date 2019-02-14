@@ -1,4 +1,4 @@
-# Xhance SDK iOS Integration Document
+# Adsforce SDK iOS Integration Document
 
 ## Project Configuration
 
@@ -17,7 +17,7 @@ NSString *channelId = @"your channelId";
 NSString *appid = @"your appid";
 
 // init SDK
-[XhanceSDK initWithDevKey:devKey publicKey:publicKey trackUrl:trackUrl channelId:channelId appId:appid];
+[AdsforceSDK initWithDevKey:devKey publicKey:publicKey trackUrl:trackUrl channelId:channelId appId:appid];
 ```
 
 About the parameters of `devKey`、`publicKey`、`trackUrl`、`channelId`、`appid`,  please apply for them from the website.
@@ -31,12 +31,12 @@ The time to initialize SDK should be set in a relative earlier position. Such as
 After initialization, relevant information about DeepLink can be fetched asynchronously  through this method.
 
 ```objective-c
-[XhanceSDK getDeeplink:^(XhanceDeeplinkModel *deeplinkModel) {
+[AdsforceSDK getDeeplink:^(AdsforceDeeplinkModel *deeplinkModel) {
     NSLog(@"%@",deeplinkModel);
 }];
 ```
 
-`XhanceDeeplinkModel` includes the following parameters:
+`AdsforceDeeplinkModel` includes the following parameters:
 
 - `targetUrl`
 - `linkArgs`
@@ -52,7 +52,7 @@ NSNumber *productPrice = [NSNumber numberWithDouble:your price];
 NSString *productCurrencyCode = @"your product currency code";
 NSString *pubkey = @"your itunes connect pubkey";
 
-[XhanceSDK appStoreWithProductPrice:productPrice productCurrencyCode:productCurrencyCode receiptDataString:receiptDataString pubkey:pubkey params:nil];
+[AdsforceSDK appStoreWithProductPrice:productPrice productCurrencyCode:productCurrencyCode receiptDataString:receiptDataString pubkey:pubkey params:nil];
 
 ```
 Parameters are as follows:
@@ -72,7 +72,7 @@ NSString *productCurrencyCode = @"your product currency code";
 NSString *productIdentifier = @"your product id";
 NSString *productCategory = @"your product category";
 
-[XhanceSDK thirdPayWithProductPrice:productPrice productCurrencyCode:productCurrencyCode productIdentifier:productIdentifier productCategory:productCategory];
+[AdsforceSDK thirdPayWithProductPrice:productPrice productCurrencyCode:productCurrencyCode productIdentifier:productIdentifier productCategory:productCategory];
 ```
 
 Parameters are as follows:
